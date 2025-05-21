@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class CountOfVowels {
 	
-	public static int CountOfVowels(String word) {
+	public static int VowelsCount(String word) {
 		
 		int count =0;
 		//loop for iterating each character index in the word
@@ -28,8 +28,8 @@ public class CountOfVowels {
 		
 		CountOfVowels obj =  new CountOfVowels();
 		
-		System.out.println("Count of vowels in "+word+" is  : "+obj.CountOfVowels(word));
-
+		System.out.println("Count of vowels in "+word+" is  : "+obj.VowelsCount(word));
+		input.close();
 	}
 
 }
