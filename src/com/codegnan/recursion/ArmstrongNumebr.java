@@ -6,7 +6,7 @@ public class ArmstrongNumebr {
 	
 	// global static variables
 	static int res = 0;
-	static int count = 0;
+	static int count = 0;  
 	
 	
 	//method to count numberOfDigits in given num
