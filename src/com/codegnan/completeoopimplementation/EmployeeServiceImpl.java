@@ -8,7 +8,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	List<Employee> employeeList = new ArrayList<Employee>();
 	
-	
+	// Adding employees manually
 	@Override
 	public Employee addEmployeeManually(Employee employee) {
 		employeeList.add(employee);
@@ -16,11 +16,10 @@ public class EmployeeServiceImpl implements EmployeeService {
 		return employee;
 	}
 
+	
 	// optional method
 	// Adding employees through user input 
-	
 	@Override
-
 	public void addEmployee() {
 
 		// Scanner class
@@ -62,6 +61,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	}
 
+	
+	//deleting existing employees
 	@Override
 	public Employee deleteEmployee(int id) {
 		for(Employee e:employeeList) {
@@ -74,6 +75,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 		
 	}
 
+	
+	//returns employee Detials by taking id
 	@Override
 	public Employee getEmployeeById(int id) {
 		for(Employee e:employeeList) {
@@ -84,11 +87,16 @@ public class EmployeeServiceImpl implements EmployeeService {
 		return null;
 	}
 
+	
+	//updates employee details  based on id
 	@Override
 	public Employee updateEmployee(Employee employee) {
+		
 		return null;
 	}
 
+	
+	//returns all employee details 
 	@Override
 	public List<Employee> getAllEmployeeDetails() {
 		return employeeList;
