@@ -7,6 +7,7 @@ public class ATM extends AtmDetailsImplementation {
 	double balance;
 	public void checkPassword()throws InvalidPinException, InsufficientBalanceException, InvalidAmountException {
 		int attempts = 0;
+		
 		do {
 			Scanner input = new Scanner(System.in);
 			System.out.println("Enter Pin Number : ");
@@ -22,6 +23,7 @@ public class ATM extends AtmDetailsImplementation {
 					System.out.println("Authorization Successful");
 					System.out.println();
 					showDetails();
+					return;
 				}
 			}
 			
@@ -44,6 +46,7 @@ public class ATM extends AtmDetailsImplementation {
 		
 		
 		do {
+			
 		System.out.println("Enter your choice : ");
 		choice = input.nextInt();
 		
@@ -90,12 +93,7 @@ public class ATM extends AtmDetailsImplementation {
 			
 			break;
 		case 4:
-			System.out.println("Option 1 : Withdraw money");
-			System.out.println("Option 2 : Deposit money");
-			System.out.println("Option 3 : Check balance");
-			System.out.println("Option 4 : Exit");
-			System.out.println();
-			System.out.println();
+			
 			System.out.println(" Exit ");
 			break;
 		default:

@@ -1,4 +1,4 @@
-package com.codegnan.completeoopimplementation;
+package com.codegnan.EmployeePackageDTO;
 
 public class Employee {
 
@@ -7,7 +7,14 @@ public class Employee {
 	private double salary;
 	
 	
+	public Employee() {
+		super();
+		
+	}
+
+
 	public Employee(int id, String name, double salary) {
+		super();
 		this.id = id;
 		this.name = name;
 		this.salary = salary;
@@ -48,6 +55,7 @@ public class Employee {
 	public String toString() {
 		return "Employee [id=" + id + ", name=" + name + ", salary=" + salary + "]";
 	}
+	
 	
 	
 	
