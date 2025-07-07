@@ -3,7 +3,8 @@ package com.codegnan.lambdaExpressions;
 public class LambdaExpression {
 
 	/*
-	 * Java Features :
+	 * 
+	 *                                 Java Features :
 	 * 
 	 * Lambda expressions :
 	 * 
@@ -27,7 +28,7 @@ public class LambdaExpression {
 	 * 
 	 * a lambda expressions can have zero or more number of parameters. usually we
 	 * can specify we can specify type of parameter. If the compiler expects the
-	 * type based on the context then new an remove the type also
+	 * type based on the context then new you can remove the type also
 	 * 
 	 * if 0 number of parameters are available so then we have to use empty
 	 * parameter like ()
@@ -65,8 +66,12 @@ public class LambdaExpression {
 	 * 
 	 * An interface can extends another interface
 	 * Interface b extends a{
+	 * 
 	 *  now b becomes functional interface by default
+	 *  
 	 *  public abstract void method(); //Is this valid statement or not? yes beacause same name as a interface
+	 *  
+	 *  
 	 * }
 	 * 
 	 * Lambda Expressions vs Functional Interfaces : 
