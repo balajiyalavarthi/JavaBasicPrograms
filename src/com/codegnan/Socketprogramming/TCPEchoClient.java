@@ -5,10 +5,10 @@ import java.net.*;
 
 public class TCPEchoClient {
 	private static InetAddress host;
-	private static final int port = 1233;
+	private static final int port = 1231;
 
 	public static void main(String[] args) {
-		
+
 		try {
 			host = InetAddress.getLocalHost();
 		} catch (UnknownHostException e) {
@@ -16,8 +16,7 @@ public class TCPEchoClient {
 			System.exit(1);
 		}
 		accessServer();
-		
-		
+
 	}
 
 	public static void accessServer() {

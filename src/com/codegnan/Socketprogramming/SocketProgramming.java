@@ -7,7 +7,8 @@ import java.net.UnknownHostException;
  * Soclet programming : 
  * 
  * Socket : 
- * Socket is an end point for sending and recieving data access a computer network. it is a fundamental concept in network programmin
+ * Socket is an end point for sending and recieving data access a computer network. 
+ * It is a fundamental concept in network programming
  * and used to enable communication between two machines often a client and a server.
  * 
  * TCP : 
@@ -43,8 +44,8 @@ import java.net.UnknownHostException;
  * getInputStream().getoutputStream();
  * 
  * 3. send and recieve the data
- * scanner object of client mesage sent by prinworter of server and printwriter 
- * of the client send the message that are recieved by the scanner object at the server
+ * scanner object of client mesage sent by printwriter of server and printwriter 
+ * of the client send the message that are recieved by the scanner object at the server.
  * 
  * 4.close the connection
  * 

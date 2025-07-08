@@ -6,7 +6,7 @@ import java.util.*;
 public class TcpEchoServer {
 	
 	private static ServerSocket ss;
-	private static final int port = 1233;
+	private static final int port = 1231;
 	
 	
 	public static void main(String[] args) {
@@ -24,9 +24,11 @@ public class TcpEchoServer {
 			System.exit(1);
 			
 		}
+		
 		do {
 			handleClient();
 		} while (true);
+		
 	}
 	private static void handleClient() {
 		Socket link = null;
@@ -37,12 +39,13 @@ public class TcpEchoServer {
 			int numMess = 0;
 			String message = input.readLine();
 			while (!message.equals("***CLOSE***")) {
-				System.out.println("Message received.");
+				System.out.println("Message received."+message);
 				numMess++;
-				output.println("Message " + numMess + ": " + message);
+				output.println("Message " + numMess + ": ");
 				message = input.readLine();
 			}
 			output.println(numMess + " messages received.");
+			
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
